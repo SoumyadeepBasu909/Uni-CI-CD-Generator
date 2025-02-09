@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CI/CD Pipeline Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🚀 CI/CD Pipeline Generator</h1>
+        <p>Generate Jenkins, GitHub Actions, or GitLab CI pipelines with ease!</p>
+        
+        <form id="pipelineForm">
+            <div class="form-group">
+                <label for="ci_cd_tool">🔧 CI/CD Tool</label>
+                <select id="ci_cd_tool">
+                    <option value="jenkinsfile">Jenkins</option>
+                    <option value="github">GitHub Actions</option>
+                    <option value="gitlab">GitLab CI</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="project_type">📂 Project Type</label>
+                <input type="text" id="project_type" placeholder="e.g., Java, Python" required>
+            </div>
+
+            <div class="form-group">
+                <label for="build_tool">🔨 Build Tool</label>
+                <input type="text" id="build_tool" placeholder="e.g., Ant, Maven" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="github_url">🔗 GitHub Repository</label>
+                <input type="text" id="github_url" placeholder="e.g., https://github.com/your-repo.git" required>
+            </div>
+
+            <div class="form-group">
+                <label for="deployment">🚢 Deployment Type</label>
+                <input type="text" id="deployment" placeholder="e.g., Docker, Kubernetes" required>
+            </div>
+
+            <div class="form-group">
+                <label for="build_command">⚙️ Build Command</label>
+                <input type="text" id="build_command" placeholder="e.g., mvn clean install" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="artifact">📦 Artifact Path</label>
+                <input type="text" id="artifact" placeholder="e.g., target/*.jar" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="test_command">🧪 Test Command</label>
+                <input type="text" id="test_command" placeholder="e.g., mvn test" required>
+            </div>
+
+            <div class="form-group">
+                <label for="docker_image">🐳 Docker Image (Optional)</label>
+                <input type="text" id="docker_image" placeholder="e.g., myapp:v1">
+            </div>
+
+            <button type="submit">🚀 Generate Pipeline</button>
+        </form>
+
+        <div class="output-container">
+            <h2>📜 Generated Pipeline</h2>
+            <pre id="output"></pre>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
