@@ -20,6 +20,10 @@ h1 {
     color: #FFC107; /* Gold */
 }
 
+h2,p{
+	color: black;
+}
+
 label {
     font-weight: bold;
     color: #333;
@@ -49,11 +53,12 @@ button:hover {
 }
 
 .output {
-    background: #F5F5F5;
-    color: #333;
+    background: #000000; /* Black */
+    color: #FFFFFF; /* White text */
     padding: 15px;
     border-radius: 5px;
     margin-top: 20px;
     text-align: left;
     white-space: pre-wrap;
 }
+

@@ -4,7 +4,6 @@ from fastapi.responses import PlainTextResponse
 from app.render import generate_pipeline
 from app.models import PipelineRequest
 
-
 app = FastAPI()
 
 # Enable CORS
